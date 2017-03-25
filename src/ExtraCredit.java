@@ -2,7 +2,7 @@
 public class ExtraCredit {
 	
 
-	public static int missingNumber(int[] nums){
+	public static int missingNumber(int[] nums){           //wrong: if input is {0,1,3}, your output is 6, but the answer should be 2
 		int n=nums.length+1;
 		int missingNumber=nums[0];
 		for(int i=1; i<=n;i++){
@@ -14,7 +14,7 @@ public class ExtraCredit {
 		return missingNumber;
 	}
 	
-	public static void moveZeroes(int[] nums){
+	public static void moveZeroes(int[] nums){           //correct
 		int n=-1;
 		
 		for(int i=0; i<nums.length;i++){
@@ -32,7 +32,7 @@ public class ExtraCredit {
 			}
 		}
 	} 
-	public int thirdMax(int[] nums){
+	public int thirdMax(int[] nums){                      //correct
 		long max=Long.MIN_VALUE, mid=max, min=max;
 		for(int num: nums){
 			if(num>max){
